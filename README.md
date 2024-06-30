@@ -1,17 +1,29 @@
-# Lms-final-project
-Learning Managment System
-Step 1: Project Setup
-Create a new directory for your project and navigate into it.
+# Learning Managment System
+
+## Step 1: Project Setup
+
+### Create a new directory for your project and navigate into it.
+```bash
 mkdir learning-management-app
 cd learning-management-app
-Initialize a new Node.js project.
+```
+### Initialize a new Node.js project.
+```bash
 npm init -y
-Install necessary dependencies.
+```
+### Install necessary dependencies.
+```bash
 npm install express mysql ejs bcryptjs express-session express-validator
-Step 2: Set up the Backend
-Create a server.js file in your project directory.
-Create a MySQL database named learning_management
-Create users table
+```
+
+## Step 2: Set up the Backend
+
+### Create a `server.js` file in your project directory.
+
+### Create a MySQL database named `learning_management` 
+
+#### Create users table
+```bash
 -- Create users table
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -20,7 +32,10 @@ CREATE TABLE users (
     email VARCHAR(255) UNIQUE,
     full_name VARCHAR(255)
 );
-Create courses table
+```
+
+#### Create courses table
+```bash
 -- Create courses table
 CREATE TABLE courses (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -32,7 +47,10 @@ INSERT INTO courses (name) VALUES
 ('Introduction to HTML'),
 ('CSS Fundamentals'),
 ('JavaScript Basics');
-Create leaderboard table
+```
+
+#### Create leaderboard table
+```bash
 -- Create leaderboard table
 CREATE TABLE leaderboard (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -46,13 +64,24 @@ INSERT INTO leaderboard (name, score) VALUES
 ('Jane Smith', 90),
 ('Michael Brown', 85),
 ('Emily Jones', 80);
-Run the server.
+```
+
+### Run the server.
+```bash
 node server.js
-Step 3: Frontend Setup
-Create an index.html file for the frontend.
-Create a course-content.html file for the course content.
-Create a leader-board.html file for the leader board.
-Create a style.css file to style your HTML.
-Create a script.js file to handle frontend interactions.
-Step 4: Testing
+```
+
+## Step 3: Frontend Setup
+
+### Create an `index.html` file for the frontend.
+
+### Create a `course-content.html` file for the course content.
+
+### Create a `leader-board.html` file for the leader board.
+
+### Create a `style.css` file to style your HTML.
+
+### Create a `script.js` file to handle frontend interactions.
+
+## Step 4: Testing
 Open your web browser and navigate to http://localhost:3000.
